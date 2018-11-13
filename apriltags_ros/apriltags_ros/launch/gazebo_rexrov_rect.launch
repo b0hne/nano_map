@@ -1,0 +1,7 @@
+<launch>
+ <remap from="/rexrov/rexrov/camera/image_raw" to="/rexrov/rexrov/camera/camera_image" />
+    <remap from="camera_info" to="/rexrov/rexrov/camera/camera_info" />
+   <!-- <remap from="/rexrov/rexrov/camera/camera_raw" to="/rexrov/rexrov/camera/camera_image"/> -->
+
+  <node ns="/rexrov/rexrov/camera/" pkg="image_proc" type="image_proc" name="image_proc"/>  
+</launch>
